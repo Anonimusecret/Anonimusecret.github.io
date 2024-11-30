@@ -3,6 +3,8 @@ let hidden = document.getElementById('hidden');
 let animated = document.getElementById('animated');
 let numb = document.getElementById('numb')
 
+
+let circular = document.getElementById("circular")
 let circle = document.getElementById("circle")
 let leftProgress = document.getElementById("leftProgress")
 let rihgtProgres = document.getElementById("rightProgress")
@@ -44,19 +46,19 @@ value.addEventListener('change', ()=> {
 animated.addEventListener('change', function() {
     if (this.checked) {
         console.log("animated");
-        circle.style.animation = 'rotation'
+        circle.classList.add("animated")
     } else {
         console.log("not animated");
-
+        circle.classList.remove("animated")
     }
 });
 
 hidden.addEventListener('change', function() {
     if (this.checked) {
         console.log("hidden");
-        circle.style.display = 'none'
+        circular.style.display = 'none'
     } else {
         console.log("not hidden");
-        circle.style.display = 'block'
+        circular.style.display = 'block'
     }
 });
