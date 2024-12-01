@@ -13,8 +13,8 @@ html,body{
   background: #dde6f0;
 }
 .circular{
-  height: 100px;
-  width: 100px;
+  height: 200px;
+  width: 200px;
   position: relative;
 }
 .circular .inner, .circular .outer, .circular .circle{
@@ -28,9 +28,9 @@ html,body{
 .circular .inner{
   top: 50%;
   left: 50%;
-  height: 80px;
-  width: 80px;
-  margin: -40px 0 0 -40px;
+  height: 160px;
+  width: 160px;
+  margin: -80px 0 0 -80px;
   background-color: #dde6f0;
   border-radius: 100%;
   box-shadow: 0 1px 0 rgba(0,0,0,0.2);
@@ -45,8 +45,8 @@ html,body{
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 36px;
+  font-weight: 1000;
   color: #4158d0;
 }
 .circular .bar{
@@ -55,14 +55,14 @@ html,body{
   width: 100%;
   background: #fff;
   -webkit-border-radius: 100%;
-  clip: rect(0px, 100px, 100px, 50px);
+  clip: rect(0px, 200px, 200px, 100px);
 }
 .circle .bar .progress{
   position: absolute;
   height: 100%;
   width: 100%;
   -webkit-border-radius: 100%;
-  clip: rect(0px, 50px, 100px, 0px);
+  clip: rect(0px, 100px, 200px, 0px);
 }
 .circle .bar .progress, .dot span{
   background: #4158d0;
@@ -84,6 +84,27 @@ html,body{
 
 .control{
   flex-direction: column;
+  font-size: 36px;
+}
+input[type=checkbox]
+{
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  transform: scale(2);
+  padding: 10px;
+  margin: 10px;
+}
+input[type=number]
+{
+  -ms-transform: scale(1.5); /* IE */
+  -moz-transform: scale(1.5); /* FF */
+  -webkit-transform: scale(1.5); /* Safari and Chrome */
+  -o-transform: scale(1.5); /* Opera */
+  transform: scale(1.5);
+  padding: 10px;
+  margin: 10px;
 }
 
 @keyframes rotation{
