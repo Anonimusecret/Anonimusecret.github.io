@@ -10,8 +10,7 @@ let rihgtProgres = document.getElementById("rightProgress")
 
 
 value.addEventListener('change', ()=> {
-    console.log(value.value)
-
+    
     numb.textContent = value.value + "%";
     if(value.value > 100 ){
 
@@ -38,20 +37,17 @@ value.addEventListener('change', ()=> {
 
 animated.addEventListener('change', function() {
     if (this.checked) {
-        console.log("animated");
         circle.classList.add("animated")
     } else {
-        console.log("not animated");
         circle.classList.remove("animated")
     }
 });
 
 hidden.addEventListener('change', function() {
     if (this.checked) {
-        console.log("hidden");
+        
         circular.style.display = 'none'
     } else {
-        console.log("not hidden");
         circular.style.display = 'block'
     }
 });
