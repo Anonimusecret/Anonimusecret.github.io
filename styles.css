@@ -82,6 +82,10 @@ html,body{
     animation-iteration-count: infinite;
 }
 
+.control{
+  flex-direction: column;
+}
+
 @keyframes rotation{
     100% {
       transform: rotate(360deg);
